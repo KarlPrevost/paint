@@ -1,0 +1,32 @@
+body{
+    margin:0;
+}
+
+.toolbar{
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;   
+    border-bottom: 1px solid grey;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+
+.toolbar * {
+    margin: 5px 20px;
+}
+
+#canvas{
+    display:block;
+}
+
+.save-link{
+	background-color: orange;
+	border: 1px solid green;
+	box-shadow: 2px 2px;
+}
+
+.save-link:hover{
+	box-shadow: 1px 1px;
+	cursor:pointer;
+}

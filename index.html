@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Paint</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div class="toolbar">
+		<button class="pencil ">Crayon</button>
+		<button class="line ">Ligne</button>
+		<button class="rectangle ">Rectangle</button>
+		<button class="circle ">Cercle</button>
+		<button class="eraser ">Gomme</button>
+		<button class="clear ">Effacer</button>
+		<input type="color" name="favcolor" onchange="color(this)">
+		<input type="range" id="size" min="1" max="50" value="10">
+
+		<select id="filling" class="">
+			<option value="stroke">Stroke</option>
+			<option value="fill">Fill</option>
+		</select>
+
+		<a id="save-link" download="image.png"><button id="save-btn" download="image.png">Save</button></a>
+	</div>
+	<div class="canvas">
+		<canvas id="canvas">
+			Votre navigateur ne permet pas d'afficher les canvas.
+		</canvas>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
